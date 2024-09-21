@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"],
+        input[type="button"] {
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="get" action="list1.html">
+            <table>
+                <tr>
+                    <th colspan="2">Registration Form</th>
+                </tr>
+                <tr>
+                    <td><label for="fname">First Name:</label></td>
+                    <td><input type="text" name="fname" id="fname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name:</label></td>
+                    <td><input type="text" name="lname" id="lname" required></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea rows="2" cols="20" name="address" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" id="password" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female" required>
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobby:</td>
+                    <td>
+                        <input type="checkbox" name="hobby_cricket" id="cricket" value="cricket" checked>
+                        <label for="cricket">Cricket</label>
+                        <input type="checkbox" name="hobby_football" id="football" value="football">
+                        <label for="football">Football</label>
+                        <input type="checkbox" name="hobby_singing" id="singing" value="singing">
+                        <label for="singing">Singing</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td>
+                        <select name="city" id="city" required>
+                            <option value="baroda">Baroda</option>
+                            <option value="rajkot">Rajkot</option>
+                            <option value="mumbai">Mumbai</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number" name="age" id="age" required></td>
+                </tr>
+                <tr>
+                    <td>Qualification:</td>
+                    <td>
+                        <select name="qualification" id="qualification" required>
+                            <option value="bca">BCA</option>
+                            <option value="llb">LLB</option>
+                            <option value="mbbs">MBBS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload File:</td>
+                    <td><input type="file" name="file" id="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                        <input type="button" value="Cancel" onclick="window.location.href='list1.html'">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

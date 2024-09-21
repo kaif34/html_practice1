@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title> registration form</title>
+        <script type="text/javascript" >
+            function validate()
+            {
+                t=document.record;
+                if(t.name.value="")
+                {
+                    alert("enter your name");
+                    t.name.focus();
+                    return false;
+                }
+                if(t.email.value="")
+                {
+                    alert("enter your email");
+                    t.email.focus();
+                    return false;
+                }
+                if(t.password.value="")
+                {
+                    alert("enter your password");
+                    t.password.focus();
+                    return false;
+        </script>
+    </head>
+    <style> 
+        
+    </style>
+    <body>
+        <form method="get" action="form1 .html" name="record">
+           <table>
+            <tr>
+                <h1 colspan="2" >Registration form</h1> 
+            </tr>
+            <tr>  
+            <td><label> First name:</label></td>
+            <td><input type="text" name="fname" id="fname"/></td>
+            </tr>
+            <tr>  
+                <td><label>Last name:</label></td>
+                <td><input type="text" name="lname" id="lname"/></td>
+                </tr>
+
+                <tr>
+                    <td> Email:</td>
+                    <td> <input type="email" name="e1" id="e1"/></td>
+                </tr>
+
+            <tr>
+                <td>  Enter your address:</td>
+                <td><textarea rows="2" cols="20"></textarea></td>
+            </tr>
+            
+
+            <tr>
+                <td> Password:</td>
+                <td> <input type="password" name="p1" id="p1"/></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="r1" id="male"> Male
+                    <input type="radio" name="r1" id="female"> Female</td>
+            </tr>
+
+            <tr>
+                <td>Hobby:</td>
+                <td> <input type="checkbox" name="c1" checked> Cricket
+                    <input type="checkbox" name="k1" checked> Kabbadi
+                    <input type="checkbox" name="h1" checked> Hockey</td>
+            </tr>
+
+            <tr>
+                <td> City:</td>
+                <td> <select name="s1">
+                <option value="baroda">baroda</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="surat">surat</option>
+                </select>
+            </td>
+
+            </tr>
+
+            <tr>
+                <td> upload file:</td>
+                <td> <input type="file"/></td>
+            </tr>
+
+            <tr>
+                <td> <input type="submit" name="submit" value="submit"/></td>
+                <td> <input type="button" name="cancel" value="cancel"/></td>
+            </tr>
+        </table>
+        </form>
+
+    </body>
+</html>
